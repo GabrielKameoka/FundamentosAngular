@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 `,
   styleUrls: ['./card-button.component.scss']
 })
+
 export class CardButtonComponent {
 
 }
