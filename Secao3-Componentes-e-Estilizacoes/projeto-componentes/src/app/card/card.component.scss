@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&family=Roboto+Mono:wght@100&display=swap');
 
 .card {
-    max-width: 350px;
+    width: 350px;
     background-color: #ffbaaa;
     border-radius: 25px;
     padding: 30px;
@@ -19,4 +19,8 @@
         font-weight: 600;
         font-size: 40px;
     }
+}
+
+.gabriella{
+    background-color: blueviolet;
 }
