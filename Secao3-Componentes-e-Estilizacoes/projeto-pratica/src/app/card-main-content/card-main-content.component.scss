@@ -1,0 +1,14 @@
+.card{
+    padding: 16px;
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}

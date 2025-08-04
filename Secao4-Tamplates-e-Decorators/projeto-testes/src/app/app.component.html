@@ -1,0 +1,27 @@
+<input id="Caixa1" value="não dinâmico" type="text" />
+<input id="Caixa2" [value]="textoDinamico" type="text" />
+<input id="Caixa3" [value]="textoDinamico" type="password" />
+<input id="Caixa4" value="texto" type="text" [disabled]="isDisable" />
+
+<br>
+
+<button (click)="enableInput()" >Habilitar</button>
+<button (click)="disableInput()">Desabilitar</button>
+
+<br>
+
+<input id="Caixa5" value="lalala" [type]="typeInput" />
+
+<br>
+
+<button (click)="passwordInput()" >Senha</button>
+<button (click)="textInput()">Texto</button>
+
+<p>quantos clicks dei: {{contador}}</p>
+<button (click)="contaClick()">click</button>
+
+<button [attr.disabled] = "buttonDisable ? true : null">Teste</button>
+
+<br>
+
+<button [style.width.px]="widthbutton" [style.backgroundColor]="backgroundColor">botao</button>

@@ -1,0 +1,39 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+  textoDinamico = "meu texto";
+  isDisable = true;
+  typeInput = "text";
+
+  enableInput(){
+    this.isDisable = false;
+  }
+
+  disableInput(){
+    this.isDisable = true;
+  }
+
+  passwordInput(){
+    this.typeInput = "password";
+  }
+
+  textInput(){
+    this.typeInput = "text";
+  }
+
+  contador = 0;
+
+  contaClick(){
+    this.contador++;
+  }
+
+  buttonDisable = false;
+
+  widthbutton = 130;
+  backgroundColor = 'pink';
+}

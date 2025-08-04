@@ -1,0 +1,29 @@
+.page-layout{
+    display: flex;
+}
+
+aside{
+    width: 200px;
+    height: 100vh;
+    background-color:black;
+    color: white;
+    border: 10px solid black;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    background-color: white !important;
+    padding: 20px;
+}
