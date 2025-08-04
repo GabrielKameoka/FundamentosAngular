@@ -36,4 +36,7 @@ export class AppComponent {
 
   widthbutton = 130;
   backgroundColor = 'pink';
+
+  isRedButton = true;
+  isGreen = true;
 }

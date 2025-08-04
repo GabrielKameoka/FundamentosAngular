@@ -25,3 +25,15 @@
 <br>
 
 <button [style.width.px]="widthbutton" [style.backgroundColor]="backgroundColor">botao</button>
+
+<br><br>
+
+<button [class.red-button]="isRedButton" (click)="isGreen = false;">Vermelho</button>
+<button [class.green-button]="true" (click)="isGreen = true">Verde</button>
+
+<br><br>
+
+<button [class]="{
+    'green-button': !isGreen,
+    'red-button': isGreen
+}">Objeto</button>
