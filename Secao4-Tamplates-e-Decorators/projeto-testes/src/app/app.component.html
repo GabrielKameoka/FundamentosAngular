@@ -1,4 +1,4 @@
-<input id="Caixa1" value="não dinâmico" type="text" />
+<!-- <input id="Caixa1" value="não dinâmico" type="text" />
 <input id="Caixa2" [value]="textoDinamico" type="text" />
 <input id="Caixa3" [value]="textoDinamico" type="password" />
 <input id="Caixa4" value="texto" type="text" [disabled]="isDisable" />
@@ -37,3 +37,13 @@
     'green-button': !isGreen,
     'red-button': isGreen
 }">Objeto</button>
+
+
+
+<app-card [nome]="nome"></app-card>
+<app-button-sim [texto]="textoButton1"></app-button-sim>
+<app-button-sim [texto]="textoButton2"></app-button-sim>
+<app-card-declaracao [textoDeclaracao]="texto"></app-card-declaracao> -->
+
+<app-contador-component (Contador)="onContador($event)"></app-contador-component>
+<p>Valor atual: {{valorDoFilho}}</p>

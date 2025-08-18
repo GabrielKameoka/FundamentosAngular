@@ -39,4 +39,17 @@ export class AppComponent {
 
   isRedButton = true;
   isGreen = true;
+
+  nome = "Gabriella Bezerra Batista";
+  textoButton1 = "SIM";
+  textoButton2 = "Claro dã"
+  texto = "quero me casar com você."
+
+
+
+  valorDoFilho = 0;
+
+  onContador(valorAtual: number){
+    this.valorDoFilho = valorAtual;
+  }
 }
