@@ -45,5 +45,11 @@
 <app-button-sim [texto]="textoButton2"></app-button-sim>
 <app-card-declaracao [textoDeclaracao]="texto"></app-card-declaracao> -->
 
-<app-contador-component (Contador)="onContador($event)"></app-contador-component>
-<p>Valor atual: {{valorDoFilho}}</p>
+<!-- <app-contador-component (Contador)="onContador($event)"></app-contador-component>
+<p>Valor atual: {{valorDoFilho}}</p> -->
+
+
+
+<input type="number" [(ngModel)]="valorReal" (ngModelChange)="ConverteDolar($event)">
+
+<h1>Valor em dólar: {{valorDolar | currency:'USD' : 'symbol'}} </h1>

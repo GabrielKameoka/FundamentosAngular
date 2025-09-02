@@ -1,0 +1,6 @@
+<h1>Aprovados:</h1>
+<div *ngFor="let aluno of ListaAluno">
+  <p [ngStyle]="{ color: getColor(aluno.nota) }">{{ aluno.nome }} - {{ aluno.nota }}</p>
+</div>
+<br />
+<h1 [ngClass]="{ 'is-orange': isOrange }">Olá mundo</h1>

@@ -52,4 +52,16 @@ export class AppComponent {
   onContador(valorAtual: number){
     this.valorDoFilho = valorAtual;
   }
+
+
+
+
+
+  valorReal: number = 0;
+  valorDolar: number = 0;
+  
+  ConverteDolar(event: number){
+    this.valorDolar = this.valorReal * 5,48;
+  }
+
 }

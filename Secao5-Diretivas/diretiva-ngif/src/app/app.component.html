@@ -1,0 +1,29 @@
+<div *ngIf="isLogged; else notLogged">
+  <p>Bem vindo de volta!</p>
+</div>
+
+<ng-template #notLogged>
+  <p>Faça o login</p>
+</ng-template>
+
+<button (click)="toggleLogin()">{{isLogged ? 'sair' : 'entrar'}}</button>
+
+<br><br>
+
+<!-- Ambos devem ser true para aparecer -->
+<div *ngIf="pessoa.nome && pessoa.idade">
+  <h1>Condição ambos</h1>
+  <p>{{pessoa.nome}}</p>
+  <p>{{pessoa.idade}}</p>
+</div>
+
+<!-- Pelo menos uma ser true para aparecer -->
+<div *ngIf="pessoa.nome || pessoa.idade">
+  <h1>Condição ou</h1>
+  <p>{{pessoa.nome}}</p>
+  <p>{{pessoa.idade}}</p> 
+</div>
+
+<ng-container>
+  
+</ng-container>

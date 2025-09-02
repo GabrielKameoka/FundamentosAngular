@@ -3,22 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
-import { ButtonSimComponent } from './button-sim/button-sim.component';
-import { CardDeclaracaoComponent } from './card-declaracao/card-declaracao.component';
-import { ContadorComponentComponent } from './contador-component/contador-component.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
-    ButtonSimComponent,
-    CardDeclaracaoComponent,
-    ContadorComponentComponent
+    CardComponent
   ],
   imports: [
-    FormsModule,
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
